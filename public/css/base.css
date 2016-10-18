@@ -19,8 +19,9 @@ body, html {
 /* 左侧导航栏 */
 .aside1 {
   /*background-color: #1f2c39;*/
-  background-color: #1abc9c;
-  background-image: url(/public/img/yellowdeer.jpg);
+  background-color: #969696;
+  
+  /*background-image: url(/public/img/yellowdeer.jpg);*/
   height: 100%;
   padding-left: 0px;
   padding-right: 0px;
