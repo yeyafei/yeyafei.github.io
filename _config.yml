@@ -27,9 +27,9 @@ ga:
   id: UA-54262064-1 
   url: https://yeyafei.github.io/
 
-# disqus 设置
+# disqus 设置 -->换成了多说
 disqus:
-  shortname: yeyafei.github.io
+  shortname: yyfblog
 
 # 主题设置，自动激活某个标签
 active: 读书
