@@ -66,6 +66,7 @@ $(document).ready(function() {
     contentEffects();
   });
   $('body').on('click', '.show-commend', function(){
+    alert("disqus 显示？")
     var ds_loaded = false;
     window.disqus_shortname = $('.show-commend').attr('name');
     $.ajax({
