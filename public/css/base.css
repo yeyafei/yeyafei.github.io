@@ -20,7 +20,7 @@ body, html {
 .aside1 {
   /*background-color: #1f2c39;*/
 /*   background-color: #969696; */
-  background-color: #495A80;
+  background-color: #376956;
   
   /*background-image: url(/public/img/yellowdeer.jpg);*/
   height: 100%;
@@ -41,7 +41,8 @@ body, html {
 
 .aside1> .nav > li > a:hover {
   color:#fff;
-  background-color: #16a085;
+/*   background-color: #16a085; */
+  background-color: #376956;
 }
 
 .aside1 > .nav-pills>li.active>a ,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus {
