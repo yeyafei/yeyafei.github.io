@@ -24,7 +24,7 @@ favicon: /public/img/yyf.png
 
 # google analytics 设置
 ga:
-  id: UA-54262064-1 
+  id: UA-54262064-1yyf 
   url: https://yeyafei.github.io/
 
 # disqus 设置 -->换成了多说
