@@ -18,6 +18,9 @@ layout: base
           <div class="panel panel-primary">
             <div class="panel-heading">{{ movie.title }}</div>
             <div class="panel-body">
+
+            <p style=font-size:18px>在电影院看的一些电影，一千个人心中有一千个哈姆雷特，好看不好看全是我个人见解。</p>
+
               <div class="row">
                 <div class="col-md-4 col-xs-12 center">
                   <img src="{{ movie.cover }}" alt="cover" class="img-thumbnail">
@@ -25,25 +28,25 @@ layout: base
                 <div class="col-md-8 col-xs-12">
                   <table class="table table-bordered">
                     <tbody>
-                      <tr><td style="width:80px;">作者</td><td>{{ movie.author }}</td></tr>
-                      <tr><td>出版商</td><td>{{ movie.publisher }}</td></tr>
-                      <tr><td>语言</td><td>{{ movie.language }}</td></tr>
+                      <tr><td style="width:80px;">导演</td><td>{{ movie.direct }}</td></tr>
+                      <tr><td>主演</td><td>{{ movie.star }}</td></tr>
+                      <tr><td>上映时间</td><td>{{ movie.date }}</td></tr>
                       <tr>
                         <td>链接</td><td>
-                        <a href="{{ movie.link }}" title="{{ movie.link }}">图书链接</a>
+                        <a href="{{ movie.link }}" title="{{ movie.link }}">豆瓣链接</a>
                       </td></tr>
                       <tr>
-                        <td>状态</td>
+                        <td>分数</td>
                         <td>
-                          {% if movie.status == '已读' %}
+                          {% if movie.status == 'A' %}
                             <span class="label label-success">{{ movie.status }}</span>
-                          {% elsif movie.status == '在读' %}
+                          {% elsif movie.status == 'B' %}
                             <span class="label label-info">{{ movie.status }}</span>
-                          {% elsif movie.status == '未读' %}
+                          {% elsif movie.status == 'C' %}
                             <span class="label label-default">{{ movie.status }}</span>
                           {% endif %}
                         </td></tr>
-                      <tr><td>评论</td><td>{{ movie.description }}</td></tr>
+                      <tr><td>简评</td><td>{{ movie.description }}</td></tr>
                     </tbody>
                   </table>
                 </div>
