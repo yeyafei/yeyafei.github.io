@@ -2,7 +2,7 @@
 layout: post
 title: Mybatis CRUD (一)
 category: 技术
-tags: Reids
+tags: crud
 keywords: 
 description: 
 ---
