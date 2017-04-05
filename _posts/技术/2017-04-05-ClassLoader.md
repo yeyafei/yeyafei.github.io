@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 对ClassLodader的理解
+title: ClassLodader的理解
 category: 技术
 tags: ClassLoader
 keywords: 
@@ -40,12 +40,16 @@ public final ClassLoader getParent() {
 	return parent;
     }
  //。。。。。。。。。。。。。。。。。
+
 ``` 
+
 #### 基本概念
 Jvm将java文件编译成class文件后，类加载器通过读取java字节码来转换成一个class实例，
 系统为所有载入内存里的类都会生成一个java.lang.class对象，同一个类只会被加载一次，在JVM中每一个不同的类都会有一个不同的类加载器负责。
 使用示例：
+
 ``` java
+
 public class ClassLoaderTest {
 	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		 Class<?> cls = Thread.currentThread().getContextClassLoader().loadClass("com.yyf.V"); 
